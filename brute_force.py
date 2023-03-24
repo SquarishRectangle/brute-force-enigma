@@ -7,7 +7,7 @@ CHARSET = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
 
 
 def brute_force(code: str, dictionary: list):
-    reflectors = ['A', 'B', 'C']
+    reflectors = ['B', 'C']
     rotors = ['I', 'II', 'III', 'IV', 'V']
     rotor_combinations = [f'{a} {b} {c}' for a in rotors for b in rotors for c in rotors]
     ring_settings = [f'{a} {b} {c}' for a in CHARSET for b in CHARSET for c in CHARSET]
